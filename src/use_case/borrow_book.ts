@@ -8,10 +8,10 @@ class BorrowBook {
         this.bookRepository = bookRepository
     }
 
-    borrow() {
+    borrow(bookTitle: String) {
         if (this.checkAccessRight() && this.canBorrow()) {
-            this.bookRepository.updateBorrower(this.user)
-            this.bookRepository.updateBorrowDate(Date.now())
+            this.bookRepository.updateBorrower(bookTitle, this.user)
+            this.bookRepository.updateBorrowDate(bookTitle, Date.now())
         }
     }
 

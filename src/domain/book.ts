@@ -10,9 +10,9 @@ interface BookRepository {
 
     getBorrowedBooks: (borrower: User) => Book[]
 
-    updateBorrower: (borrower: User) => void
-
-    updateBorrowDate: (date: number) => void
-
     addBook: (book: Book) => void
+
+    updateBorrower: (bookTitle: String, borrower: User) => void
+
+    updateBorrowDate: (bookTitle: String, date: number) => void
 }
