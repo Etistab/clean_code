@@ -1,4 +1,8 @@
-class AddBook {
+ import { User } from 'domain/user'
+ import { Book, BookRepository } from 'domain/book'
+ 
+ 
+ export class AddBook {
     user: User
     bookRepository: BookRepository
 

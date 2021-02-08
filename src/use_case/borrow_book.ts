@@ -1,4 +1,7 @@
-class BorrowBook {
+import { User } from 'domain/user'
+import { BookRepository } from 'domain/book'
+
+export class BorrowBook {
     user: User
     bookRepository: BookRepository
 

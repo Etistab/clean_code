@@ -1,11 +1,15 @@
-interface Book {
+import { User } from 'domain/user'
+
+export interface Book {
     title: String
     author: String
-    borrower: User
-    borrow_date: number
+    borrower?: User
+    borrow_date?: number
 }
 
-interface BookRepository {
+export interface BookRepository {
+    getBook: (title: String) => Book
+
     getBooks: () => Book[]
 
     getBorrowedBooks: (borrower: User) => Book[]

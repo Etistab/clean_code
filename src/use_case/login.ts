@@ -1,4 +1,6 @@
-class Login {
+import { User, UserRepository } from 'domain/user'
+
+export class Login {
     userRepository: UserRepository
 
     constructor(userRepository: UserRepository) {

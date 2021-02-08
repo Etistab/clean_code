@@ -1,4 +1,6 @@
-class SeeLibrary {
+import { Book, BookRepository } from 'domain/book'
+
+export class SeeLibrary {
     bookRepository: BookRepository
 
     

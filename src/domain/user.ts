@@ -1,10 +1,10 @@
-type UserType = 'Member' | 'Guest' | 'Librarian';
+export type UserType = 'Member' | 'Guest' | 'Librarian';
 
-interface User {
+export interface User {
   id: number
   type: UserType
 }
 
-interface UserRepository {
+export interface UserRepository {
     getUser: (id: number) => User
 }   
